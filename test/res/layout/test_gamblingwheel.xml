@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/ID_TEST_GAMBLINGWHEEL_ROOT">
+    
+    <Button 
+        style="@style/Style_Lo_W_WC_H_WC"
+        android:id="@+id/ID_TEST_GAMBLINGWHEEL_BTN"
+        android:text="滚动"/>
+
+</LinearLayout>

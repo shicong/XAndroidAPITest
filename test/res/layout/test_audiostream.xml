@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<!-- 链接地址 -->
+    <TextView 
+        style="@style/Style_Lo_W_WC_H_WC"
+        android:id="@+id/ID_TEST_AUDIOSTREAM_TEXTVIEW"/>
+    
+    <!-- 启动播放 -->
+    <Button 
+        style="@style/Style_Lo_W_WC_H_WC"
+        android:id="@+id/ID_TEST_AUDIOSTREAM_START"
+        android:text="开始"/>
+    
+</LinearLayout>

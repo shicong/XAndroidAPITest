@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        style="@style/Style_Comm_Text_W_WC_H_WC_Black"
+        android:textSize="10sp"
+        android:height="250dp"
+        android:text="ExifInterface测试"
+        android:id="@+id/ID_TEST_EXIFINTERFACE_PIC_URLS"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="vertical"/>
+
+    <LinearLayout 
+        style="@style/Style_Lo_W_MP_H_WC"
+        android:orientation="horizontal"
+       	android:layout_below="@id/ID_TEST_EXIFINTERFACE_PIC_URLS"
+       	android:id="@+id/ID_TEST_EXIFINTERFACE_BTN_AREA">
+
+        <Button 
+	        style="@style/Style_Lo_W_WC_H_WC"
+	        android:text="上一张"
+	        android:id="@+id/ID_TEST_EXIFINTERFACE_BTN_PRE"
+	        android:layout_weight="2"/>
+        
+        <TextView 
+	        style="@style/Style_Comm_Text_W_WC_H_WC_Black"
+	        android:textSize="10sp"
+	        android:id="@+id/ID_TEST_EXIFINTERFACE_PIC_CURR_URL"
+	        android:layout_weight="1"/>
+        
+	    <Button 
+	        style="@style/Style_Lo_W_WC_H_WC"
+	        android:text="下一张"
+	        android:id="@+id/ID_TEST_EXIFINTERFACE_BTN_NEXT"
+	        android:layout_weight="2"/>
+        
+    </LinearLayout>
+    
+    
+    <ImageView 
+        style="@style/Style_Lo_W_WC_H_WC"
+        android:id="@+id/ID_TEST_EXIFINTERFACE_PIC_THUMBNAIL"
+        android:layout_below="@id/ID_TEST_EXIFINTERFACE_BTN_AREA"/>
+    
+    <ImageView 
+        style="@style/Style_Lo_W_WC_H_WC"
+        android:id="@+id/ID_TEST_EXIFINTERFACE_PIC"
+        android:layout_below="@id/ID_TEST_EXIFINTERFACE_BTN_AREA"
+        android:layout_toRightOf="@id/ID_TEST_EXIFINTERFACE_PIC_THUMBNAIL"/>
+    
+</RelativeLayout>

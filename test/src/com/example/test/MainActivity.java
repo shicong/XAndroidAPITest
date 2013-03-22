@@ -1,5 +1,8 @@
 package com.example.test;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -22,12 +25,16 @@ public class MainActivity extends Activity {
 		"Scroller Wheel≤‚ ‘",//6
 		"ExifInterface ≤‚ ‘",//7
 		"Loaders≤‚ ‘",//8
+		"xFerModer≤‚ ‘",//9
 	};
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		/*test java*/
+		testJava();
 		
 		/*test items*/
 		final ListView sViewTestList = (ListView) findViewById(R.id.ID_TEST_LISTVIEW);
@@ -64,6 +71,10 @@ public class MainActivity extends Activity {
 						intent = new Intent(MainActivity.this, LoadersActivity.class);
 						startActivity(intent);
 						break;
+					case 9:
+						intent = new Intent(MainActivity.this, XfermodeActivity.class);
+						startActivity(intent);
+						break;
 					default:
 						break;
 				}
@@ -80,4 +91,72 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
+	private void testJava()
+	{
+		for(int i = 0 ; i < 20; i++)
+		{
+			testJava_FS();
+		}
+	}
+	
+	
+	/**
+	 * Javaµƒ∑¥…‰≤‚ ‘
+	 * @author shicong
+	 *
+	 * 2013-3-21
+	 */
+	private void testJava_FS(){
+		
+		Person aPerson = new Person();
+		
+		Class<?> aDemoClass = null;
+		try {
+			aDemoClass = Class.forName(aPerson.getClass().getName());
+			
+			 Constructor<?>[] xx = aDemoClass.getConstructors();
+			
+			Person bPerson = (Person) xx[0].newInstance(this);
+			Person cPerson = (Person) xx[1].newInstance(this,20);
+			Person dPerson = (Person) xx[2].newInstance(this,"shicong");
+			
+
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private class Person{
+		String mName;
+		int mAge;
+
+		public Person() {
+			// TODO Auto-generated constructor stub
+		}
+		
+		public Person(int aAge)
+		{
+			mAge = aAge;
+		}
+		
+		public Person(String aName)
+		{
+			mName = aName;
+		}
+		
+	}
+	
 }

@@ -59,6 +59,11 @@
             android:label="@string/app_name" >
         </activity>
         
+        <!-- XfermodeActivity测试 -->
+        <activity
+            android:name="com.example.test.XfermodeActivity"
+            android:label="@string/app_name" >
+        </activity>
         
     </application>
     

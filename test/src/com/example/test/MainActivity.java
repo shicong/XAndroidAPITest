@@ -3,6 +3,8 @@ package com.example.test;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
+import com.example.test.clocklistview.ClockListViewActivity;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -26,6 +28,7 @@ public class MainActivity extends Activity {
 		"ExifInterface ≤‚ ‘",//7
 		"Loaders≤‚ ‘",//8
 		"xFerModer≤‚ ‘",//9
+		"ClockListView≤‚ ‘",//10
 	};
 	
 	@Override
@@ -73,6 +76,10 @@ public class MainActivity extends Activity {
 						break;
 					case 9:
 						intent = new Intent(MainActivity.this, XfermodeActivity.class);
+						startActivity(intent);
+						break;
+					case 10:
+						intent = new Intent(MainActivity.this, ClockListViewActivity.class);
 						startActivity(intent);
 						break;
 					default:

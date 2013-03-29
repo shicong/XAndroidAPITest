@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.test.clocklistview.ClockListView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pp="http://schemas.android.com/apk/res/com.example.test"
+    pp:scrollBarPanel="@layout/test_clock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/ID_TEST_CLOCKLISTVIEW_ROOTVIEW">
+</com.example.test.clocklistview.ClockListView >

@@ -65,6 +65,13 @@
             android:label="@string/app_name" >
         </activity>
         
+        <!-- ClockListViewActivity测试 -->
+        <activity
+            android:name="com.example.test.clocklistview.ClockListViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
     </application>
     
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>

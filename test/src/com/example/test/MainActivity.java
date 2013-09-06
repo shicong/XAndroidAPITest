@@ -29,6 +29,8 @@ public class MainActivity extends Activity {
 		"Loaders²âÊÔ",//8
 		"xFerModer²âÊÔ",//9
 		"ClockListView²âÊÔ",//10
+		"Æô¶¯±ğµÄApp²âÊÔ",//11
+		"ÏÂÀ´Ë¢ĞÂ²âÊÔ",//12
 	};
 	
 	@Override
@@ -82,6 +84,14 @@ public class MainActivity extends Activity {
 						intent = new Intent(MainActivity.this, ClockListViewActivity.class);
 						startActivity(intent);
 						break;
+					case 11:
+						intent = new Intent(MainActivity.this, StartOtherAppTest.class);
+						startActivity(intent);
+						break;
+					case 12:
+                        intent = new Intent(MainActivity.this, PullToRefreshActivity.class);
+                        startActivity(intent);
+					    break;
 					default:
 						break;
 				}

@@ -15,4 +15,31 @@
         android:layout_width="wrap_content"
         android:text="Buton坐标位置"
         android:id="@+id/ID_TEST_VIEW_BUTTON"/>
+    
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="单行"
+        android:singleLine="true"
+        android:id = "@+id/ID_TEST_VIEW_TEXT_1"/>"
+
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="2行"
+        android:maxLines="2"
+        android:id = "@+id/ID_TEST_VIEW_TEXT_2"/>
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="单行最多5个字符"
+        android:singleLine="true"
+        android:maxLength="5"
+        android:id = "@+id/ID_TEST_VIEW_TEXT_3"/>
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="正常"
+        android:id = "@+id/ID_TEST_VIEW_TEXT_4"/>
+        
 </LinearLayout>

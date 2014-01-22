@@ -40,6 +40,8 @@ public class MainActivity extends Activity {
 		"启动别的App测试",//11
 		"下来刷新测试",//12
 		"View test",//13
+		"滚动列表",//14
+		"滚动列表Linear",//15
 	};
 	
 	@Override
@@ -103,6 +105,14 @@ public class MainActivity extends Activity {
 					    break;
 					case 13:
                         intent = new Intent(MainActivity.this, ViewTestActivity.class);
+                        startActivity(intent);
+                        break;
+					case 14:
+                        intent = new Intent(MainActivity.this, ScrollListActivity.class);
+                        startActivity(intent);
+					    break;
+					case 15:    
+                        intent = new Intent(MainActivity.this, ScrollListLinearActivity.class);
                         startActivity(intent);
                         break;
 					default:

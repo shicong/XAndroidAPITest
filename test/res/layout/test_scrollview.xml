@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:id="@+id/ID_TEST_SCROLLVIEW_ROOT">
+    
+    <ScrollView 
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:scrollbarThumbVertical="@drawable/scroll"	        
+        android:background="@color/color_Black">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:textColor="@color/color_White"
+	        android:scrollbars="vertical"
+	        android:scrollbarStyle="insideOverlay"
+	        android:scrollbarSize="2dp"
+	        android:paddingRight="1dp"
+	        android:text="测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊测职工啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"/>
+    </ScrollView>
+
+</LinearLayout>
